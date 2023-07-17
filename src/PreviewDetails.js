@@ -10,54 +10,97 @@ const PreviewDetails = ({
   return (
     <div>
       <h2>Preview Details</h2>
-      <h3>Personal Details</h3>
-      <table>
+      <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
         <tbody>
           <tr>
-            <td>Name:</td>
-            <td>{personalDetails.name}</td>
+            <th
+              colSpan="2"
+              style={{ border: "1px solid black", padding: "5px" }}
+            >
+              Personal Details
+            </th>
           </tr>
           <tr>
-            <td>Age:</td>
-            <td>{personalDetails.age}</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>Name:</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {personalDetails.name}
+            </td>
           </tr>
           <tr>
-            <td>Date of Birth:</td>
-            <td>{personalDetails.dob}</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Contact Details</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td>Phone Number:</td>
-            <td>{contactDetails.phoneNumber}</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>Age:</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {personalDetails.age}
+            </td>
           </tr>
           <tr>
-            <td>Email Address:</td>
-            <td>{contactDetails.email}</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Address Details</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td>Street Address:</td>
-            <td>{addressDetails.streetAddress}</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              Date of Birth:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {personalDetails.dob}
+            </td>
           </tr>
           <tr>
-            <td>City:</td>
-            <td>{addressDetails.city}</td>
+            <th
+              colSpan="2"
+              style={{ border: "1px solid black", padding: "5px" }}
+            >
+              Contact Details
+            </th>
           </tr>
           <tr>
-            <td>State:</td>
-            <td>{addressDetails.state}</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              Phone Number:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {contactDetails.phoneNumber}
+            </td>
           </tr>
           <tr>
-            <td>Zipcode:</td>
-            <td>{addressDetails.zipcode}</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              Email Address:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {contactDetails.email}
+            </td>
+          </tr>
+          <tr>
+            <th
+              colSpan="2"
+              style={{ border: "1px solid black", padding: "5px" }}
+            >
+              Address Details
+            </th>
+          </tr>
+          <tr>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              Street Address:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {addressDetails.streetAddress}
+            </td>
+          </tr>
+          <tr>
+            <td style={{ border: "1px solid black", padding: "5px" }}>City:</td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {addressDetails.city}
+            </td>
+          </tr>
+          <tr>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              State:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {addressDetails.state}
+            </td>
+          </tr>
+          <tr>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              Zipcode:
+            </td>
+            <td style={{ border: "1px solid black", padding: "5px" }}>
+              {addressDetails.zipcode}
+            </td>
           </tr>
         </tbody>
       </table>
